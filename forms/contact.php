@@ -23,6 +23,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   // Attempt to send the email
   if (mail($recipient, $email_subject, $email_content, $email_headers)) {
+    // Send auto-response to the user
+    $auto_response_subject = "Thank you for your message";
+    $auto_response_message = "Dear $name,\n\nThank you for contacting us. We have received your message and will get back to you as soon as possible.\n\nBest regards,\nThe Example Team";
+
+    mail($email, $auto_response_subject, $auto_response_message, $email_headers);
+
     http_response_code(200);
     echo "Success";
   } else {
