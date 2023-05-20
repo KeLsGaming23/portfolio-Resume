@@ -27,7 +27,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $auto_response_subject = "Thank you for your message";
     $auto_response_message = "Dear $name,\n\nThank you for contacting us. We have received your message and will get back to you as soon as possible.\n\nBest regards,\nThe Example Team";
 
-    mail($email, $auto_response_subject, $auto_response_message, $email_headers);
+    // Build the auto-response email headers
+    $auto_response_headers = "From: alcorizamichael@gmail.com\r\n";
+
+    mail($email, $auto_response_subject, $auto_response_message, $auto_response_headers);
 
     http_response_code(200);
     echo "Success";
