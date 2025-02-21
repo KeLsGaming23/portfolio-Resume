@@ -855,6 +855,42 @@ section {
   box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
 
+.services .iconbox-gray i {
+  color: #545454;
+}
+
+.services .iconbox-gray:hover .icon i {
+  color: #fff;
+}
+
+.services .iconbox-gray:hover .icon path {
+  fill: #545454;
+}
+
+.services .iconbox-green i {
+  color: #1ea82c;
+}
+
+.services .iconbox-green:hover .icon i {
+  color: #fff;
+}
+
+.services .iconbox-green:hover .icon path {
+  fill: #1ea82c;
+}
+
+.services .iconbox-black i {
+  color: #25282b;
+}
+
+.services .iconbox-black:hover .icon i {
+  color: #fff;
+}
+
+.services .iconbox-black:hover .icon path {
+  fill: #25282b;
+}
+
 .services .iconbox-blue i {
   color: #47aeff;
 }
